@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.2)
 
-project(lw2)
+project(lab2)
 
-add_library(table STATIC table.cpp)
+add_library(calculator STATIC calculator.cpp)
 
-add_executable(lw2 main.cpp)
+add_executable(main main.cpp)
 
-target_link_libraries(lw2 table)
+target_link_libraries(main calculator)

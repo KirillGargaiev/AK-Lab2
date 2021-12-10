@@ -1,14 +1,11 @@
-#include "table.h"
+#include "calculator.h"
+
+using namespace std;
 
 int main()
 {
-    using namespace std;
-    
-   	Table* table = new Table(15.0, 10.0, 1.5, 2.5);
-
-   	table->placeTheTable(2.5, 1.5);
-
-   	table->flipTheTable();
+   	Calculator* calculator = new Calculator();
+   	calculator->Mul(5.2, 6.4);
 
     return 0;
 }

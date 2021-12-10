@@ -1,11 +1,11 @@
-build: main.o libtable.a
-	g++ -o lw2 main.o -L. -ltable
+build: main.o libcalculator.a
+	g++ -o main main.o -L. -lcalculator
 
-libtable.a: table.o
-	ar cr libtable.a table.o
+libcalculator.a: calculator.o
+	ar cr libcalculator.a calculator.o
 
-main.o table.o:
+main.o calculator.o:
 	g++ -c *.cpp
 
 clean:
-	rm -f *.o *.a lw2
+	rm -f *.o *.a main
